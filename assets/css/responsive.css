@@ -1,7 +1,7 @@
-/* responsive  */
+/* responsive for all devices  */
 
 
-/* Media for Brekpoint Laptop And Desktop */
+/**************For Laptop And Desktop */
 @media (max-width: 1200px) {
     .container {
         max-width: 100%;
@@ -10,49 +10,22 @@
 }
 
 
-/* Media for Brekpoint Tab/Kindle */
+/****************For Tab */
 @media (max-width: 992px) {
-    .primary-menu {
-        display: block;
-        position: fixed;
-        right: -100%;
-        top: 0px;
-        width: 50%;
-        height: 100%;
-        background: #fff;
-        padding: 2rem;
-        box-shadow: 0px 12.5px 10px #00010021,
-            0px 100px 80px #0000000d;
-        transition: right 0.3s ease-out;
-        z-index: 4;
-
-    }
+   
 
     #checkbox:checked~.primary-menu {
         right: 0%;
     }
 
-    .primary-menu ul {
-        flex-direction: column;
-    }
-
-    .primary-menu ul li {
-        padding-bottom: 1rem;
-    }
-
-    .primary-menu ul li:last-child a {
-        display: none;
-    }
+  
 
     .navbar .humberger {
         display: block;
     }
 
-    .cart {
-        display: block;
-    }
 
-    /* hero  */
+    /****************** hero  */
     .hero-content .hero-text {
         width: 55%;
     }
@@ -61,19 +34,17 @@
         width: 40%;
     }
 
-    .cta {
-        margin-bottom: 2rem;
-    }
+   
 }
 
-/* Media for Brekpoint mini tab */
+/**************  for mini tab */
 @media (max-width: 868px) {
     .products-content {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Media for Brekpoint mini tab */
+/* mini tab */
 @media (max-width: 768px) {
     .hero-content {
         flex-direction: column;
@@ -93,31 +64,11 @@
         order: 1;
     }
 
-    /* .logos  */
-    .logos-content {
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
+   
 
-    .cta {
-        margin-bottom: 2rem;
-    }
+  
 
-    .cta-content {
-        width: 100%;
-
-    }
-
-    .cta-container {
-        padding: 3rem;
-
-    }
-}
-
-/* Media for Brekpoint Mobile */
+/***************** Mobile */
 @media (max-width: 668px) {
     .hero-text {
         text-align: center;
@@ -153,4 +104,3 @@
     .fields button {
         width: 50%;
     }
-}
